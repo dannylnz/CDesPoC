@@ -1,0 +1,84 @@
+//Buttons
+.btn-small {
+	background-color:#000000;
+    display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+    font-weight:bold;
+    height: 40px;
+    text-decoration:none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.btn-small:hover {
+  background-color:#404040;
+  color: white !important;
+}
+
+  .btn-primary {
+    background-color:#000000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 16x;
+    height: 48px;
+    text-decoration:none;
+  }
+
+.btn-primary:hover {
+  background-color:#404040;
+  color: white !important;
+}
+
+.btn-large {
+	background-color:#000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+    height: 70px;
+	text-decoration:none;
+}
+
+.btn-large:hover {
+  background-color:#404040;
+  color: white !important;
+}
+
+.btn-secondary {
+  background-color:#fff;
+  display:inline-block;
+  cursor:pointer;
+  color:#000;
+  font-size:16px;
+  font-weight:bold;
+  padding:8px 16x;
+  height: 48px;
+  text-decoration:none;
+  border: 1px solid black;
+}
+
+.btn-secondary:hover {
+  border: 2px solid black;
+}
+
+.btn-icon {
+  background-color: transparent;
+  display:inline-block;
+  cursor:pointer;
+  color: black;
+  font-size:16px;
+  font-weight:bold;
+  padding:8px 16x;
+  height: 48px;
+  text-decoration:none;
+}
+
+.btn-icon:hover {
+color: #404040;
+}

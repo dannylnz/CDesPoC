@@ -1,0 +1,169 @@
+<!-- Title, description and overview -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="display-4">Buttons</div>
+    <p class="paragraph">Buttons are used to initialize an action.
+      Button labels express what action will occur when the user interacts with it.
+    </p>
+    <hr class="solid my-4">
+    <div class="h5">Overview</div>
+    <p class="paragraph">Buttons are clickable elements that are used to trigger actions.
+      They communicate calls to action to the user and allow users to interact with pages in a variety of ways.
+      Button labels express what action will occur when the user interacts with it.
+    </p>
+    <div class="h5"><b>When to use</b></div>
+    <p class="paragraph">
+      Use buttons to communicate actions users can take and to allow users to interact with the page.
+      Each page should have one primary button, and any remaining calls to action should be represented as lower
+      emphasis buttons.
+    </p>
+    <div class="h5">When not to use</div>
+    <p class="paragraph">
+      Do not use buttons as navigational elements. Instead, use links when the desired action is to take the user to a
+      new page.
+    </p>
+  </div>
+  <div class="col-lg-12">
+    <div class="h5">Button types</div>
+    <p class="paragraph">
+      We have different styles of buttons and links for different types of interaction on various platforms.
+      They use flat colors and are Black or White, with gray shades used to indicate different interactive states.
+      Choose a style and size according to the amount of attention the call-to-action needs.
+      On mobile, form fields and buttons span the full width.
+    </p>
+    <img src="./assets/img/01_buttons_styles.svg" class="img-fluid" alt="spacers">
+  </div>
+</div>
+<!-- End of Title, description and overview -->
+<hr class="solid my-4">
+<!-- Start of Button Types -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="h3">Four different types</div>
+  </div>
+<!-- Button | Primary -->
+  <div class="col-3">
+    <div class="box-card">
+      <div class="mx-auto">
+        <button mat-flat-button color="accent" class="btn-primary">Primary button</button>
+      </div>
+    </div>
+    <span class="paragraph-small-title">Primary</span>
+    <p class="paragraph-small-text">
+      For the principal call to action on the page.
+      Primary buttons should only appear once per screen (not including the application header or in a modal dialog).
+    </p>
+  </div>
+<!-- Button | Secondary -->
+  <div class="col-3">
+    <div class="box-card">
+      <div class="mx-auto">
+        <button mat-flat-button color="accent" class="btn-secondary">Secondary</button>
+      </div>
+    </div>
+    <span class="paragraph-small-title">Secondary</span>
+    <p class="paragraph-small-text">
+      For secondary actions on each page; these can only be used in conjunction with a primary button.
+    </p>
+  </div>
+<!-- Button | Icon + text -->
+  <div class="col-3">
+    <div class="box-card">
+      <div class="mx-auto">
+        <button mat-flat-button color="accent" class="btn-icon"><span class="material-icons">filter_list</span>Filter</button>
+      </div>
+    </div>
+    <span class="paragraph-small-title">With icon</span>
+    <p class="paragraph-small-text">
+      For less prominent actions;
+      Button with icon buttons can be used in isolation or paired with a primary button when there are multiple calls to
+      action.
+    </p>
+  </div>
+<!-- Button | Icon Only -->
+  <div class="col-3">
+    <div class="box-card">
+      <div class="mx-auto">
+        <button mat-flat-button color="accent" class="btn-icon"><span class="material-icons">arrow_forward</span></button>
+      </div>
+    </div>
+    <span class="paragraph-small-title">Icon only</span>
+    <p class="paragraph-small-text">
+      For less prominent actions;
+      Button with icon buttons can be used in isolation or paired with a primary button when there are multiple calls to
+      action.
+    </p>
+  </div>
+<!-- Show sample code -->
+  <div class="col-12 my-4">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button mat-flat-button color="accent" class="btn-block btn-icon collapsed" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Show sample code <span class="material-icons">expand_more</span>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="bg-code mt-3">
+            <pre>
+              <code>
+        &lt;button mat-flat-button color=&quot;accent&quot; class=&quot;btn-primary&quot;&gt;Primary button&lt;/button&gt;
+        &lt;button mat-flat-button color=&quot;accent&quot; class=&quot;btn-secondary&quot;&gt;Secondary button&lt;/button&gt;
+        &lt;button mat-flat-button color=&quot;accent&quot; class=&quot;btn-icon&quot;&gt;&lt;span class=&quot;material-icons&quot;&gt;filter_list&lt;/span&gt;
+        &lt;button mat-flat-button color=&quot;accent&quot; class=&quot;btn-icon&quot;&gt;&lt;span class=&quot;material-icons&quot;&gt;arrow_forward&lt;/span&gt;&lt;/button&gt;         
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- End of Code Snippets -->
+<!-- Start of alignment -->
+<div class="row">
+  <div class="col-12">
+    <div class="h4">Alignment</div>
+  </div>
+  <div class="col-6">
+    <div class="box-card">
+      <div class="mx-auto">
+        <button mat-flat-button color="accent" class="btn-primary mr-2" style="width: 200px;">Primary button</button>
+        <button mat-flat-button color="accent" class="btn-secondary" style="width: 200px;">Secondary button</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <span class="paragraph-small-title">Right Justified</span>
+    <p class="paragraph">We align the primary button to the right. If there’s two buttons, please make sure both buttons
+      having the same width.
+    </p>
+  </div>
+  <div class="col-12 spacer-s">
+  </div>
+  <div class="col-6">
+    <div class="box-card">
+      <div class="mx-auto">
+        <div class="col-12 mb-2">
+          <button mat-flat-button color="accent" class="btn-secondary" style="width: 200px;">Secondary button</button>
+        </div>
+        <div class="col-12">
+          <button mat-flat-button color="accent" class="btn-primary" style="width: 200px;">Primary button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <span class="paragraph-small-title">Full width</span>
+    <p class="paragraph">On mobile you can use full width button, please make sure both buttons having the same width
+      and better place the Primary button last.
+    </p>
+  </div>
+</div>
+<!-- End of alignment -->
+<hr class="solid my-4">

@@ -1,0 +1,43 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="header">
+  <div>
+    <a routerLink="/" style="color: white;">CS Client Portal Design System</a>
+    </div>
+  <span class="nav-tool-items">
+    <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
+  </span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <!-- Sidenav -->
+  <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
+    [fixedTopGap]>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/get-started"> 
+        <mat-icon>dashboard</mat-icon> Get started
+      </a>
+      <a mat-list-item>
+        <mat-icon>Typography</mat-icon> Typography
+      </a>
+      <a mat-list-item>
+        <mat-icon>content_paste</mat-icon> Sections
+      </a>
+      <a mat-list-item>
+        <mat-icon>view_compact</mat-icon> Cards
+      </a>
+      <a mat-list-item routerLink="/buttons">
+        <mat-icon>smart_button</mat-icon> Buttons
+      </a>
+      <a mat-list-item routerLink="/spacing">
+        <mat-icon>square_foot</mat-icon> Spacing 
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+      <div class="container py-3">
+        <router-outlet></router-outlet>
+      </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

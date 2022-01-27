@@ -1,0 +1,419 @@
+html,
+
+
+body {
+  height: 100%;
+}
+
+a:hover {
+  color: unset !important;
+  text-decoration: none !important;
+  }
+  
+@font-face {
+  font-family: "CS Type ET" !important;
+  src: url("./assets/fonts/CSW07eT-Romanv4.ttf") format("opentype");
+}
+
+* {
+  margin: 0;
+  font-family: 'CS Type ET', sans-serif;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+ul{
+  list-style: none;
+}
+
+//Various
+.border-1px-black{
+  border: 1px solid black;
+}
+
+.center-content {
+  width: 200px;
+  height: 600px;
+  background-color: blue;
+  position: absolute; /*Can also be `fixed`*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+//Box card
+.box-card{
+  min-height: 7.25rem;
+  background: #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2rem;
+  width: 100%;
+}
+
+//Buttons
+.btn-small {
+	background-color:#000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+	padding:8px 16px;
+	text-decoration:none;
+}
+
+.btn-small:hover {
+  background-color:#404040;
+  color: white !important;
+}
+
+  .btn-medium {
+    background-color:#000000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:16px;
+    height: 48px;
+    font-weight:bold;
+    padding:16px 24px;
+    text-decoration:none;
+  }
+
+
+.btn-medium:hover {
+  background-color:#404040;
+  color: white !important;
+}
+
+.btn-large {
+	background-color:#000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+	padding:24px 32px;
+	text-decoration:none;
+}
+
+.btn-large:hover {
+  background-color:#404040;
+  color: white !important;
+}
+
+//dividers
+/* Solid border */
+hr.solid {
+  border-top: 1px solid darkgray;
+}
+
+// code snippets styling
+.bg-code{
+  border: 1px solid darkgray;
+  background-color: #f2f2f2;
+  padding: 32px;
+  color: white;
+}
+
+
+// spacers & padding - Examples and actual spacers
+
+.spacer-text{
+font-weight: 600;
+font-size: 16px;
+vertical-align: middle;
+}
+
+.spacer-xl{
+margin:40px
+}
+
+.spacer-l{
+margin:32px;
+
+}
+
+.spacer-m{
+  margin:24px;
+}
+
+.spacer-s{
+  margin:16px;
+}
+
+.spacer-xs{
+  margin:8px;
+}
+
+.spacer-xl-example{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  float: left;
+  margin-right: 8px;
+}
+
+.spacer-l-example{
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  float: left;
+  margin-right: 8px;
+}
+
+.spacer-m-example{
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  float: left;
+  margin-right: 8px;
+}
+
+.spacer-s-example{
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  float: left;
+  margin-right: 8px;
+}
+
+.spacer-xs-example{
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  float: left;
+  margin-right: 8px;
+}
+
+
+
+
+
+
+.mat-sidenav-container {
+  height: 100%;
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.no-border-radius{
+  border-radius: 0px !important;
+}
+
+.mat-nav-list .mat-list-item {
+  font-size: 15px;
+}
+
+.nav-tool-items {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.mat-sidenav,
+.mat-sidenav-content {
+  padding: 16px;
+}
+
+.mat-list-item.active {
+  background: rgba(0, 0, 0, .04);
+}
+
+.mat-sidenav-content {
+  padding: 24px 40px 0;
+}
+
+.mat-sidenav {
+  background-color: #F2F2F2;
+  width: 250px;
+}
+
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+mat-sidenav mat-icon {
+  margin-right: 8px;
+}
+
+.hamburger {
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.mat-radio-button,
+.mat-radio-group {
+  margin-right: 24px;
+}
+
+.controlers-wrapper>* {
+  width: 100%;
+  padding: 0;
+}
+
+.misc-bottom-padding {
+  margin: 8px 0 16px;
+}
+
+.misc-bottom-padding mat-label {
+  margin-right: 16px;
+}
+
+mat-radio-group mat-radio-button {
+  margin-left: 4px;
+}
+
+.button-wrapper button {
+  margin-right: 4px;
+}
+
+table.mat-table,
+table {
+  width: 100%;
+}
+
+body .mat-list-item {
+  margin-bottom: 8px;
+}
+
+.inner-wrapper {
+  padding: 15px 0 130px;
+  width: 100%;
+}
+
+.inner-wrapper mat-card {
+  display: inline-block;
+  margin: 0 6% 0 0;
+  vertical-align: top;
+  width: 44%;
+}
+
+.full-wrapper {
+  width: 100%;
+}
+
+.multiple-items {
+  position: relative;
+}
+
+.multiple-items .tooltip-info {
+  right: 0;
+  top: 7px;
+  cursor: pointer;
+  color: #a1a7c7;
+  position: absolute;
+  font-size: 20px;
+}
+
+body .push-right {
+  margin-right: 8px;
+}
+
+.no-data {
+  text-align: center;
+  padding-top: 30px;
+  color: #6c75a9;
+}
+
+.button-wrapper {
+  margin: 20px 0 0 0;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.display-4{
+  padding: 8px 8px 8px 0px;
+}
+
+.paragraph{
+  font-size: 14px;
+}
+
+.paragraph-small-text{
+  padding: 8px 0px;
+  font-size: 13px;
+}
+
+.paragraph-small-title{
+  padding: 8px 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.title-group {
+  margin-bottom: 24px;
+}
+
+.card-deck-container {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  border-radius: 2px;
+  padding: 8px 8px 24px;
+  margin: 8px 8px 8px 8px;
+  background-color: #f5f5f5;
+}
+
+.card-item {
+  padding: 3px 3px 3px 3px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+.my-alternate-theme button {
+  margin-right: 8px;
+}
+
+@media (max-width:1024px) {
+  .inner-wrapper mat-card {
+    width: 100%;
+  }
+
+  .mat-sidenav-content {
+    padding: 20px 20px 0;
+  }
+
+  .misc-bottom-padding mat-label {
+    display: block;
+    padding-bottom: 16px;
+  }
+
+  .mat-sidenav {
+    width: 230px;
+  }
+
+  .mat-nav-list .mat-list-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:767px) {
+  .nav-tool-items {
+    margin-right: 0;
+  }
+
+  .hamburger {
+    visibility: visible !important;
+  }
+}
